@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="00118107"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-24 08:42:03 "/>
+        <attribute name="created" value="MDAxMTgxMDc7Q0lETEFCMTA5TTM7MjAyNS0wMi0yNDsiMDg6MDE6NDYgIjsyMjkw"/>
+        <attribute name="edited" value="MDAxMTgxMDc7Q0lETEFCMTA5TTM7MjAyNS0wMi0yNDsiMDg6NDI6MDMgIjszOzIzOTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome" type="String" array="False" size=""/>
+            <declare name="primeiro" type="Integer" array="False" size=""/>
+            <declare name="segundo" type="Integer" array="False" size=""/>
+            <declare name="terceiro" type="Integer" array="False" size=""/>
+            <declare name="quarto" type="Integer" array="False" size=""/>
+            <declare name="quinto" type="Integer" array="False" size=""/>
+            <declare name="media" type="Integer" array="False" size=""/>
+            <output expression="&quot;Insira o nome do aluno para calcular a m&#233;dia&quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;Escreva o primeiro n&#250;mero&quot;" newline="True"/>
+            <input variable="primeiro"/>
+            <output expression="&quot;Escreva o segundo n&#250;mero&quot;" newline="True"/>
+            <input variable="segundo"/>
+            <output expression="&quot;Escreva o terceira n&#250;mero&quot;" newline="True"/>
+            <input variable="terceiro"/>
+            <output expression="&quot;Escreva o quarto n&#250;mero&quot;" newline="True"/>
+            <input variable="quarto"/>
+            <output expression="&quot;Escreva o quinto n&#250;mero&quot;" newline="True"/>
+            <input variable="quinto"/>
+            <assign variable="media" expression="(primeiro+segundo+terceiro+quarto+quinto)/5"/>
+            <if expression="media &gt;= 6">
+                <then>
+                    <if expression="media &gt;= 10">
+                        <then>
+                            <output expression="&quot;A m&#233;dia do aluno &quot; &amp; nome &amp; &quot; foi excelente. M&#233;dia &quot; &amp; media" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;A m&#233;dia do aluno &quot; &amp; nome &amp; &quot; foi maior que o necess&#225;rio para atingir a nota m&#237;nima.&quot; &amp; media" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;A m&#233;dia do aluno &quot; &amp; nome &amp; &quot; foi menor que o necess&#225;rio para atingir o m&#237;nimo. &quot; &amp; media" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
