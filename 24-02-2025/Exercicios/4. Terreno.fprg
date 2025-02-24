@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Felipe"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-24 02:33:29 "/>
+        <attribute name="created" value="RmVsaXBlO0RFU0tUT1AtTDNLNDNRRTsyMDI1LTAyLTI0OyIwMjozMToyNiAiOzI4MjE="/>
+        <attribute name="edited" value="RmVsaXBlO0RFU0tUT1AtTDNLNDNRRTsyMDI1LTAyLTI0OyIwMjozMzoyOSAiOzE7MjkzNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="base" type="Real" array="False" size=""/>
+            <declare name="altura" type="Real" array="False" size=""/>
+            <declare name="area" type="Real" array="False" size=""/>
+            <output expression="&quot;Insira a largura do terreno: &quot;" newline="True"/>
+            <input variable="base"/>
+            <output expression="&quot;Insira a profundidade do terreno: &quot;" newline="True"/>
+            <input variable="altura"/>
+            <assign variable="area" expression="base * altura"/>
+            <output expression="&quot;A &#225;rea do terreno &#233; de &quot;&amp;area&amp;&quot;m&#178;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

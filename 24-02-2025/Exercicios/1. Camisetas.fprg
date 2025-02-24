@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Felipe"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-24 02:09:55 "/>
+        <attribute name="created" value="RmVsaXBlO0RFU0tUT1AtTDNLNDNRRTsyMDI1LTAyLTI0OyIwMjowMTo0MiAiOzI4MTY="/>
+        <attribute name="edited" value="RmVsaXBlO0RFU0tUT1AtTDNLNDNRRTsyMDI1LTAyLTI0OyIwMjowOTo1NSAiOzE7MjkzNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pequena" type="Integer" array="False" size=""/>
+            <declare name="media" type="Integer" array="False" size=""/>
+            <declare name="grande" type="Integer" array="False" size=""/>
+            <assign variable="pequena" expression="10"/>
+            <assign variable="media" expression="12"/>
+            <assign variable="grande" expression="15"/>
+            <declare name="quantidadePequena" type="Integer" array="False" size=""/>
+            <declare name="quantidadeMedia" type="Integer" array="False" size=""/>
+            <declare name="quantidadeGrande" type="Integer" array="False" size=""/>
+            <declare name="valorPequena" type="Integer" array="False" size=""/>
+            <declare name="valorMedia" type="Integer" array="False" size=""/>
+            <declare name="valorGrande" type="Integer" array="False" size=""/>
+            <output expression="&quot;Insira a quantidade de camisetas pequenas: &quot;" newline="True"/>
+            <input variable="quantidadePequena"/>
+            <output expression="&quot;Insira a quantidade de camisetas m&#233;dias: &quot;" newline="True"/>
+            <input variable="quantidadeMedia"/>
+            <output expression="&quot;Insira a quantidade de camisetas grandes: &quot;" newline="True"/>
+            <input variable="quantidadeGrande"/>
+            <assign variable="valorPequena" expression="pequena * quantidadePequena"/>
+            <assign variable="valorMedia" expression="media * quantidadeMedia"/>
+            <assign variable="valorGrande" expression="grande * quantidadeGrande"/>
+            <output expression="&quot;A valor final &#233; R$&quot; &amp; valorPequena &amp; &quot; em camisetas pequenas, R$&quot; &amp; valorMedia &amp; &quot; em camisetas m&#233;dias e R$&quot; &amp; valorGrande &amp; &quot; em camisetas grandes.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

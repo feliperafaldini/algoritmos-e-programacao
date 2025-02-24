@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Felipe"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-24 02:31:06 "/>
+        <attribute name="created" value="RmVsaXBlO0RFU0tUT1AtTDNLNDNRRTsyMDI1LTAyLTI0OyIwMjoyNToxNCAiOzI4MjE="/>
+        <attribute name="edited" value="RmVsaXBlO0RFU0tUT1AtTDNLNDNRRTsyMDI1LTAyLTI0OyIwMjozMTowNiAiOzE7MjkyNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="horaNormal" type="Real" array="False" size=""/>
+            <declare name="horaExtra" type="Real" array="False" size=""/>
+            <declare name="horasTrabalhadas" type="Real" array="False" size=""/>
+            <declare name="horasExtraTrabalhadas" type="Real" array="False" size=""/>
+            <declare name="bruto" type="Real" array="False" size=""/>
+            <declare name="liquido" type="Real" array="False" size=""/>
+            <assign variable="horaNormal" expression="10"/>
+            <assign variable="horaExtra" expression="15"/>
+            <output expression="&quot;Insira a quantidade de horas normais trabalhadas: &quot;" newline="True"/>
+            <input variable="horasTrabalhadas"/>
+            <output expression="&quot;Insira a quantidade de horas extra trabalhadas: &quot;" newline="True"/>
+            <input variable="horasExtraTrabalhadas"/>
+            <assign variable="bruto" expression="(horaNormal * horasTrabalhadas) + (horaExtra * horasExtraTrabalhadas)"/>
+            <assign variable="liquido" expression="bruto * 0.9"/>
+            <output expression="&quot;O sal&#225;rio bruto foi de R$&quot;&amp;bruto&amp;&quot; e o sal&#225;rio l&#237;quido foi de R$&quot;&amp;liquido" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

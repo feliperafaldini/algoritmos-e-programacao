@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Felipe"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-24 02:51:02 "/>
+        <attribute name="created" value="RmVsaXBlO0RFU0tUT1AtTDNLNDNRRTsyMDI1LTAyLTI0OyIwMjozNDoyNiAiOzI4MjQ="/>
+        <attribute name="edited" value="RmVsaXBlO0RFU0tUT1AtTDNLNDNRRTsyMDI1LTAyLTI0OyIwMjo1MTowMiAiOzE7MjkyNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="moedas" type="Integer" array="True" size="6"/>
+            <declare name="quantidadeMoedas" type="Integer" array="True" size="6"/>
+            <declare name="valorTotal" type="Real" array="False" size=""/>
+            <assign variable="moedas[0]" expression="1"/>
+            <assign variable="moedas[1]" expression="5"/>
+            <assign variable="moedas[2]" expression="10"/>
+            <assign variable="moedas[3]" expression="25"/>
+            <assign variable="moedas[4]" expression="50"/>
+            <assign variable="moedas[5]" expression="100"/>
+            <output expression="&quot;Insira a quantidade de moedas de 1 centavo: &quot;" newline="True"/>
+            <input variable="quantidadeMoedas[0]"/>
+            <output expression="&quot;Insira a quantidade de moedas de 5 centavos: &quot;" newline="True"/>
+            <input variable="quantidadeMoedas[1]"/>
+            <output expression="&quot;Insira a quantidade de moedas de 10 centavos: &quot;" newline="True"/>
+            <input variable="quantidadeMoedas[2]"/>
+            <output expression="&quot;Insira a quantidade de moedas de 25 centavos: &quot;" newline="True"/>
+            <input variable="quantidadeMoedas[3]"/>
+            <output expression="&quot;Insira a quantidade de moedas de 50 centavos: &quot;" newline="True"/>
+            <input variable="quantidadeMoedas[4]"/>
+            <output expression="&quot;Insira a quantidade de moedas de 1 real: &quot;" newline="True"/>
+            <input variable="quantidadeMoedas[5]"/>
+            <assign variable="valorTotal" expression="(quantidadeMoedas[0] * moedas[0]) + (quantidadeMoedas[1] * moedas[1]) + (quantidadeMoedas[2] * moedas[2]) + (quantidadeMoedas[3] * moedas[3]) + (quantidadeMoedas[4] * moedas[4]) +&#13;&#10;(quantidadeMoedas[5] * moedas[5])"/>
+            <if expression="valorTotal &gt; 100">
+                <then>
+                    <assign variable="valorTotal" expression="valorTotal / 100"/>
+                    <output expression="&quot;O valor guardado foi de &quot;&amp;valorTotal&amp;&quot; reais. &quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;O valor guardado &#233; de &quot;&amp;valorTotal&amp;&quot; centavos. &quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
