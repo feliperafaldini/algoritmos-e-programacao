@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Felipe"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-04 05:21:21 "/>
+        <attribute name="created" value="RmVsaXBlO0RFU0tUT1AtTDNLNDNRRTsyMDI1LTAzLTA0OyIwNToxODowNCAiOzI4MjQ="/>
+        <attribute name="edited" value="RmVsaXBlO0RFU0tUT1AtTDNLNDNRRTsyMDI1LTAzLTA0OyIwNToyMToyMSAiOzE7MjkyNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fixo" type="Integer" array="False" size=""/>
+            <declare name="vendas" type="Integer" array="False" size=""/>
+            <declare name="total" type="Integer" array="False" size=""/>
+            <output expression="&quot;Insira o sal&#225;rio fixo do funcin&#225;rio: &quot;" newline="True"/>
+            <input variable="fixo"/>
+            <output expression="&quot;Insira o total de vendas do funcion&#225;rio: &quot;" newline="True"/>
+            <input variable="vendas"/>
+            <assign variable="total" expression="fixo + (vendas * 0.04)"/>
+            <output expression="&quot;O sal&#225;rio do funcion&#225;rio &#233; de &quot; &amp; total &amp; &quot; reais.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

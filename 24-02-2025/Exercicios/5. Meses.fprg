@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Felipe"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-04 06:08:32 "/>
+        <attribute name="created" value="RmVsaXBlO0RFU0tUT1AtTDNLNDNRRTsyMDI1LTAzLTA0OyIwNjowNjozOSAiOzI4MzA="/>
+        <attribute name="edited" value="RmVsaXBlO0RFU0tUT1AtTDNLNDNRRTsyMDI1LTAzLTA0OyIwNjowODozMiAiOzE7MjkzMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dia" type="Integer" array="False" size=""/>
+            <declare name="mes" type="Integer" array="False" size=""/>
+            <declare name="diasPassados" type="Integer" array="False" size=""/>
+            <output expression="&quot;Insira o dia: &quot;" newline="True"/>
+            <input variable="dia"/>
+            <output expression="&quot;Insira o m&#234;s (numeral): &quot;" newline="True"/>
+            <input variable="mes"/>
+            <assign variable="diasPassados" expression="((mes - 1) * 30) + dia"/>
+            <output expression="&quot;J&#225; se passaram &quot; &amp; diasPassados &amp; &quot; dias no ano. &quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
