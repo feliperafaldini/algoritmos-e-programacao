@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Felipe"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-10 03:15:05 "/>
+        <attribute name="created" value="RmVsaXBlO0RFU0tUT1AtTDNLNDNRRTsyMDI1LTAzLTEwOyIwMzowNTowMiAiOzI4MTM="/>
+        <attribute name="edited" value="RmVsaXBlO0RFU0tUT1AtTDNLNDNRRTsyMDI1LTAzLTEwOyIwMzoxNTowNSAiOzE7MjkyNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x1" type="Real" array="False" size=""/>
+            <declare name="x2" type="Real" array="False" size=""/>
+            <declare name="y1" type="Real" array="False" size=""/>
+            <declare name="y2" type="Real" array="False" size=""/>
+            <declare name="distancia" type="Real" array="False" size=""/>
+            <output expression="&quot;Insira o valor de x do ponto 1: &quot;" newline="True"/>
+            <input variable="x1"/>
+            <output expression="&quot;Insira o valor de y do ponto 1: &quot;" newline="True"/>
+            <input variable="y1"/>
+            <output expression="&quot;Insira o valor de x do ponto 2: &quot;" newline="True"/>
+            <input variable="x2"/>
+            <output expression="&quot;Insira o valor de y do ponto 2: &quot;" newline="True"/>
+            <input variable="y2"/>
+            <assign variable="distancia" expression="sqrt(((x2-x1)^ 2) + ((y2-y1^ 2)))"/>
+            <output expression="&quot;A dist&#226;ncia &#233; de &quot; &amp; distancia" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

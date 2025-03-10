@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Felipe"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-10 03:04:51 "/>
+        <attribute name="created" value="RmVsaXBlO0RFU0tUT1AtTDNLNDNRRTsyMDI1LTAzLTEwOyIwMzowMTowMSAiOzI4MDg="/>
+        <attribute name="edited" value="RmVsaXBlO0RFU0tUT1AtTDNLNDNRRTsyMDI1LTAzLTEwOyIwMzowNDo1MSAiOzE7MjkyNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="reais" type="Real" array="False" size=""/>
+            <declare name="dolar" type="Real" array="False" size=""/>
+            <declare name="euro" type="Real" array="False" size=""/>
+            <declare name="libras" type="Real" array="False" size=""/>
+            <output expression="&quot;Insira a quantidade de reais (com . para casa decimal): &quot;" newline="True"/>
+            <input variable="reais"/>
+            <assign variable="dolar" expression="reais * 0.2"/>
+            <assign variable="libras" expression="reais * 0.18"/>
+            <assign variable="euro" expression="reais * 0.15"/>
+            <output expression="&quot;R$ &quot; &amp; reais &amp; &quot; Dolar: &quot; &amp; dolar &amp; &quot; Euro: &quot; &amp; euro &amp; &quot; Libras: &quot; &amp; libras" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

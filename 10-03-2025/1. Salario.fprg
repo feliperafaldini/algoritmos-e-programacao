@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Felipe"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-10 03:00:59 "/>
+        <attribute name="created" value="RmVsaXBlO0RFU0tUT1AtTDNLNDNRRTsyMDI1LTAzLTEwOyIwMjo1Nzo0MyAiOzI4MjQ="/>
+        <attribute name="edited" value="RmVsaXBlO0RFU0tUT1AtTDNLNDNRRTsyMDI1LTAzLTEwOyIwMzowMDo1OSAiOzE7MjkyOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="salario" type="Real" array="False" size=""/>
+            <declare name="inss" type="Real" array="False" size=""/>
+            <declare name="impostoRenda" type="Real" array="False" size=""/>
+            <declare name="sindicato" type="Real" array="False" size=""/>
+            <output expression="&quot;Insira o sal&#225;rio do funcion&#225;rio: &quot;" newline="True"/>
+            <input variable="salario"/>
+            <assign variable="inss" expression="salario * 0.08"/>
+            <assign variable="impostoRenda" expression="salario * 0.11"/>
+            <assign variable="sindicato" expression="salario * 0.05"/>
+            <assign variable="salario" expression="salario - inss - impostoRenda - sindicato"/>
+            <output expression="&quot;O sal&#225;rio liquido foi de R$&quot; &amp; salario" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

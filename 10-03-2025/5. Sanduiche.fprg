@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Felipe"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-24 02:24:56 "/>
+        <attribute name="created" value="RmVsaXBlO0RFU0tUT1AtTDNLNDNRRTsyMDI1LTAyLTI0OyIwMjoxODoyMSAiOzI4MjE="/>
+        <attribute name="edited" value="RmVsaXBlO0RFU0tUT1AtTDNLNDNRRTsyMDI1LTAyLTI0OyIwMjoyNDo1NiAiOzE7MjkzNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sanduiches" type="Integer" array="False" size=""/>
+            <declare name="queijo" type="Integer" array="False" size=""/>
+            <declare name="presunto" type="Integer" array="False" size=""/>
+            <declare name="hamburguer" type="Integer" array="False" size=""/>
+            <output expression="&quot;Insira a quantidade de sanduiches: &quot;" newline="True"/>
+            <input variable="sanduiches"/>
+            <assign variable="queijo" expression="2 * sanduiches * 50"/>
+            <assign variable="presunto" expression="1 * sanduiches * 50"/>
+            <assign variable="hamburguer" expression="1 * sanduiches * 100"/>
+            <output expression="&quot;Ser&#225; necess&#225;rio comprar &quot;&amp;queijo&amp;&quot; gramas de queijo, &quot;&amp;presunto&amp;&quot; gramas de presunto e &quot;&amp;hamburguer&amp;&quot; gramas de hamburguer.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
