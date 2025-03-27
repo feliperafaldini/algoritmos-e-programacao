@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Felipe"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-27 06:31:56 "/>
+        <attribute name="created" value="RmVsaXBlO0RFU0tUT1AtTDNLNDNRRTsyMDI1LTAzLTI3OyIwNjoyMDoxMSAiOzI4MjE="/>
+        <attribute name="edited" value="RmVsaXBlO0RFU0tUT1AtTDNLNDNRRTsyMDI1LTAzLTI3OyIwNjozMTo1NiAiOzE7Mjk0MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="idade" type="Integer" array="False" size=""/>
+            <declare name="socioValor" type="Integer" array="False" size=""/>
+            <declare name="socio" type="Boolean" array="False" size=""/>
+            <output expression="&quot;Insira a idade: &quot;" newline="True"/>
+            <input variable="idade"/>
+            <output expression="&quot;&#201; s&#243;cio: (1) - SIM (2) - N&#195;O&quot;" newline="True"/>
+            <input variable="socioValor"/>
+            <if expression="socioValor == 1">
+                <then>
+                    <assign variable="socio" expression="TRUE"/>
+                </then>
+                <else>
+                    <assign variable="socio" expression="FALSE"/>
+                </else>
+            </if>
+            <if expression="(socio and idade &lt; 18) or (idade &gt;= 18 and idade &lt; 65) or (idade &gt;= 65 and socio)">
+                <then>
+                    <output expression="&quot;Acesso permitido.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Acesso negado.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Felipe"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-27 06:13:43 "/>
+        <attribute name="created" value="RmVsaXBlO0RFU0tUT1AtTDNLNDNRRTsyMDI1LTAzLTI3OyIwNjowMDowMyAiOzI4MjA="/>
+        <attribute name="edited" value="RmVsaXBlO0RFU0tUT1AtTDNLNDNRRTsyMDI1LTAzLTI3OyIwNjoxMzo0MyAiOzE7MjkzNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valor" type="Real" array="False" size=""/>
+            <declare name="metodo" type="Integer" array="False" size=""/>
+            <output expression="&quot;Insira o valor da compra: &quot;" newline="True"/>
+            <input variable="valor"/>
+            <output expression="&quot;Insira o m&#233;todo de pagamento&quot;" newline="True"/>
+            <output expression="&quot;1 - Dinheiro ou Pix;&quot;" newline="True"/>
+            <output expression="&quot;2 - A vista no Cartao de Credito;&quot;" newline="True"/>
+            <output expression="&quot;3 - Parcelado em duas vezes;&quot;" newline="True"/>
+            <output expression="&quot;4 - Parcelado em tres vezes.&quot;" newline="True"/>
+            <input variable="metodo"/>
+            <if expression="metodo &gt; 0 and metodo &lt; 5">
+                <then>
+                    <if expression="metodo == 1">
+                        <then>
+                            <assign variable="valor" expression="valor - (valor * 0.1)"/>
+                            <output expression="&quot;Total a pagar: &quot; &amp; valor" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="metodo == 2">
+                                <then>
+                                    <assign variable="valor" expression="valor - (valor * 0.15)"/>
+                                    <output expression="&quot;Total a pagar: &quot; &amp; valor" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="metodo == 3">
+                                        <then>
+                                            <output expression="&quot;Total a pagar: &quot; &amp; valor &amp; &quot; em duas parcelas de R$ &quot; &amp; (valor/2)" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="valor" expression="valor + (valor * 0.1)"/>
+                                            <output expression="&quot;Total a pagar: &quot; &amp; valor &amp; &quot; em tres parcelas de R$ &quot; &amp; (valor/3)" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;M&#233;todo de pagamento inv&#225;lido.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Felipe"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-27 06:20:07 "/>
+        <attribute name="created" value="RmVsaXBlO0RFU0tUT1AtTDNLNDNRRTsyMDI1LTAzLTI3OyIwNjoxMzo0NyAiOzI4MzI="/>
+        <attribute name="edited" value="RmVsaXBlO0RFU0tUT1AtTDNLNDNRRTsyMDI1LTAzLTI3OyIwNjoyMDowNyAiOzE7MjkzNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1" type="Real" array="False" size=""/>
+            <declare name="peso1" type="Real" array="False" size=""/>
+            <declare name="nota2" type="Real" array="False" size=""/>
+            <declare name="peso2" type="Real" array="False" size=""/>
+            <declare name="nota3" type="Real" array="False" size=""/>
+            <declare name="peso3" type="Real" array="False" size=""/>
+            <declare name="media" type="Real" array="False" size=""/>
+            <output expression="&quot;Insira a nota da primeira prova: &quot;" newline="True"/>
+            <input variable="nota1"/>
+            <output expression="&quot;Insira o peso da primeira prova: &quot;" newline="True"/>
+            <input variable="peso1"/>
+            <output expression="&quot;Insira a nota da segunda prova: &quot;" newline="True"/>
+            <input variable="nota2"/>
+            <output expression="&quot;Insira o peso da segunda prova: &quot;" newline="True"/>
+            <input variable="peso2"/>
+            <output expression="&quot;Insira a nota da terceira prova: &quot;" newline="True"/>
+            <input variable="nota3"/>
+            <output expression="&quot;Insira o peso da terceira prova: &quot;" newline="True"/>
+            <input variable="peso3"/>
+            <assign variable="media" expression="((nota1 * peso1) + (nota2 * peso2) + (nota3 * peso3))/(peso1 + peso2 + peso3)"/>
+            <if expression="media &gt;= 7">
+                <then>
+                    <output expression="&quot;M&#233;dia: &quot; &amp; media &amp; &quot; Aluno aprovado.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="media &gt;= 5">
+                        <then>
+                            <output expression="&quot;M&#233;dia: &quot; &amp; media &amp; &quot; Em recupera&#231;&#227;o.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;M&#233;dia: &quot; &amp; media &amp; &quot; Aluno reprovado.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
